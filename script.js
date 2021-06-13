@@ -12,7 +12,12 @@ function addR() {
 
 //Adds a column
 function addC() {
-    alert("Clicked Add Col")
+    let table = document.getElementById("grid");
+    let rows = document.querySelectorAll("tr");
+    rows.forEach((row) => {
+        let c = document.createElement("td");
+        row.appendChild(c);
+    });
 }
 
 //Removes a row
