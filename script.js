@@ -67,7 +67,7 @@ function selected() {
 }
 
 function fill() {
-    alert("Clicked Fill All")
+    document.querySelectorAll("td").forEach(td => td.style.backgroundColor = colorSelected);
 }
 
 function clearAll() {
