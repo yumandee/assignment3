@@ -4,9 +4,10 @@ let colorSelected;
 
 //Adds a row
 function addR() {
-    table = document.getElementById("grid");
+    let table = document.getElementById("grid");
     let row = document.createElement("tr");
-    table.appendChild(row);
+    let c = document.createElement("td");
+    table.appendChild(row).appendChild(c);
 }
 
 //Adds a column
