@@ -1,6 +1,6 @@
 let numRows = 0;
 let numCols = 0;
-let colorSelected; 
+let colorSelected;
 
 //Adds a row
 function addR() {
@@ -20,19 +20,19 @@ function removeC() {
     alert("Clicked Remove Col")
 }
 //sets global var for selected color
-function selected(){
+function selected() {
     colorSelected = document.getElementById("selectedID").value;
     console.log(colorSelected);
 }
 
-function fill(){
+function fill() {
     alert("Clicked Fill All")
 }
 
-function clearAll(){
+function clearAll() {
     alert("Clicked Clear All")
 }
 
-function fillU(){
+function fillU() {
     alert("Clicked Fill All Uncolored")
 }
