@@ -71,7 +71,7 @@ function fill() {
 }
 
 function clearAll() {
-    alert("Clicked Clear All")
+    document.querySelectorAll("td").forEach(td => td.style.backgroundColor = 'white');
 }
 
 function fillU() {
