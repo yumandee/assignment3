@@ -35,7 +35,6 @@ function removeR() {
     let row = table.lastElementChild;
     if(row) table.removeChild(row);
     if (numRows > 0) numRows--;
-    console.log(numRows);
 }
 
 //Remove a column
