@@ -20,8 +20,9 @@ function addR() {
 
 //Adds a column
 function addC() {
-    let table = document.getElementById("grid");
     let rows = document.querySelectorAll("tr");
+    numCols++;
+
     rows.forEach((row) => {
         let c = document.createElement("td");
         row.appendChild(c);
