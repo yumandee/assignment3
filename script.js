@@ -71,11 +71,11 @@ function fill() {
 }
 
 function clearAll() {
-    document.querySelectorAll("td").forEach(td => td.style.backgroundColor = 'white');
+    document.querySelectorAll("td").forEach(td => td.style.backgroundColor = '');
 }
 
 function fillU() {
     document.querySelectorAll("td").forEach(td => {
-        if(td.style.backgroundColor === "white") td.style.backgroundColor = colorSelected;
+        if(td.style.backgroundColor == '') td.style.backgroundColor = colorSelected;
     });
 }
