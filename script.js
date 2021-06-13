@@ -6,8 +6,16 @@ let colorSelected;
 function addR() {
     let table = document.getElementById("grid");
     let row = document.createElement("tr");
-    let c = document.createElement("td");
-    table.appendChild(row).appendChild(c);
+    
+    numRows++;
+    if(numRows == 1) numCols++;
+
+    for(let i = 0; i < numCols; i++) {
+        let c = document.createElement("td");
+        row.appendChild(c);
+    }
+
+    table.appendChild(row);
 }
 
 //Adds a column
