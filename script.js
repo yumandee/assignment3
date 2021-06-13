@@ -31,8 +31,11 @@ function addC() {
 
 //Removes a row
 function removeR() {
-    alert("Clicked Remove Row")
+    let table = document.getElementById("grid");
+    let row = table.lastElementChild;
+    if(row) table.removeChild(row);
 }
+
 //Remove a column
 function removeC() {
     alert("Clicked Remove Col")
