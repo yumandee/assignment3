@@ -34,6 +34,8 @@ function removeR() {
     let table = document.getElementById("grid");
     let row = table.lastElementChild;
     if(row) table.removeChild(row);
+    if (numRows > 0) numRows--;
+    console.log(numRows);
 }
 
 //Remove a column
@@ -45,10 +47,12 @@ function removeC() {
         if(c) row.removeChild(c);
     });
 
-    if(numCols < 0) numCols--;
+    if(numCols > 0) numCols--;
 
-    if(numCols === 0) 
-        for(let i = 0; i < numRows; i++) removeR();
+    if(numCols === 0) {
+        let r = numRows;
+        for(let i = 0; i < r; i++) removeR();
+    }
 }
 //sets global var for selected color
 function selected() {
