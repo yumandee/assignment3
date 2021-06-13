@@ -75,5 +75,7 @@ function clearAll() {
 }
 
 function fillU() {
-    alert("Clicked Fill All Uncolored")
+    document.querySelectorAll("td").forEach(td => {
+        if(td.style.backgroundColor === "white") td.style.backgroundColor = colorSelected;
+    });
 }
