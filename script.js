@@ -57,7 +57,13 @@ function removeC() {
 //sets global var for selected color
 function selected() {
     colorSelected = document.getElementById("selectedID").value;
-    console.log(colorSelected);
+    let data = document.querySelectorAll("td");
+    data.forEach((td) => {
+        td.onclick = function() {
+            td.style.backgroundColor = colorSelected;
+        }
+    });
+
 }
 
 function fill() {
